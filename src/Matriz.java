@@ -13,13 +13,14 @@ public class Matriz
     public void armar()
     {
         String cadena = "";
+        int nro = 3;
         int[][] arreglo = new int[4][];        
         arreglo[0] = new int[4];
         arreglo[1] = new int[3];
         arreglo[2] = new int[5];
         arreglo[3] = new int[2];
         
-        arreglo[0][0] = 3;
+        /*arreglo[0][0] = 3;
         arreglo[0][1] = 6;
         arreglo[0][2] = 9;
         arreglo[0][3] = 12;
@@ -35,8 +36,19 @@ public class Matriz
         arreglo[2][4] = 36;
         
         arreglo[3][0] = 39;
-        arreglo[3][1] = 42; 
+        arreglo[3][1] = 42; */
         
+        ///////////////////////////////////////////CARGA DEL ARREGLO
+        for(int k = 0;k < arreglo.length;k ++)
+        {   
+            for(int i = 0; i < arreglo[k].length;i ++)
+            {
+                arreglo[k][i] = nro;
+                
+                nro = nro + 3;
+            }
+        }
+        ///////////////////////////////////////////
         for(int k = 0;k < arreglo.length;k ++)
         {
             for(int i = 0; i < arreglo[k].length;i ++)
